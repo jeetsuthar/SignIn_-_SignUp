@@ -8,11 +8,15 @@ import "./App.css";
 
 const App = () => {
   return (
+    <div className="fully-body">
+    <div className="images_section">
+      <img src="https://static.vecteezy.com/system/resources/previews/000/192/215/non_2x/under-construction-sign-vector.jpg" alt="" />
+    </div>
     <Router>
       <div className="App">
         <nav>
           <ul>
-            <Link to="/signin" className="links">
+            <Link to="/" className="links">
               <li id="list1" className="movement link link--metis">
                 Sign In
               </li>
@@ -26,11 +30,13 @@ const App = () => {
           </ul>
         </nav>
         <Routes>
-          <Route path="/signin" element={<SignIn />}></Route>
+          <Route path="/" element={<SignIn />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
         </Routes>
       </div>
     </Router>
+    
+    </div>
   );
 };
 

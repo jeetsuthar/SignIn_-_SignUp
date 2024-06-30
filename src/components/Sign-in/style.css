@@ -6,24 +6,32 @@
 :root {
   --dark: black;
   --light: white;
-  --hover: #FF6600;
+  --hover: rgb(254, 166, 2);
 }
 
 .login_outer_div {
   background-color: var(--dark);
-  padding: 10px;
+  padding: 20px;
+  width: 100%;
+  line-height: 28px;
+
 }
 .login_outer_div form {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  line-height: 40px;
+}
+.login_Heading {
+  color: white;
+}
+
+.login_Heading .App_logo {
+  color: orange;
 }
 .form_input_field_div {
   display: flex;
   flex-direction: column;
-  
 }
 .form_input_field_div input {
   height: 40px;
@@ -52,27 +60,59 @@ p {
   font-size: 17px;
 }
 .Social_account_links {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: column;
- 
 }
-.Social_account_links button{
-    height: 40px;
-    margin-bottom: 10px;
-    background: transparent;
-    border: 2px solid var(--light);
-    border-radius: 3px;
-    color: var(--light);
-    font-size: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Social_account_links button img{
-    height: auto;
-    width: 20px;
-    margin-right: 10px;
-}
-.check_term_and_conditions{
+.Social_account_links button {
+  height: 40px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 2px solid var(--light);
+  border-radius: 3px;
+  color: var(--light);
+  font-size: 17px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Social_account_links button img {
+  height: auto;
+  width: 20px;
+  margin-right: 10px;
+}
+.check_term_and_conditions {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.check_term_and_conditions input {
+  margin: 0 10px;
+  height: 18px;
+  width: 18px;
+}
+.text_of_condition a {
+  margin-left: 8px;
+  color: rgb(254, 166, 2);
+  text-decoration: none;
+  border-bottom: 2px dotted orange;
+  transition: 0.5s ease-in-out;
+}
+.text_of_condition a:hover {
+  color: rgb(212, 139, 2);
+}
+.create_account {
+  margin-top: 7px;
+  text-align: center;
+  padding: 0 10px;
+}
+.create_account a {
+  color: white;
+  text-decoration: none;
+}
+.create_account a span {
+  color: rgb(212, 139, 2);
 }
